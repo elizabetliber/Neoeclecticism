@@ -1,0 +1,46 @@
+.optimism__container {
+  @include containerBig;
+  display: flex;
+  flex-direction: row;
+}
+
+.optimism__text_wrapper {
+  display: flex;
+  flex: 1 1 67%;
+  flex-direction: column;
+  border: 2px solid var(--dark-green);
+  padding: 80px;
+}
+
+.optimism__title {
+  color: var(--title-color);
+  font-family: Roboto Mono;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+
+.optimism__description {
+  margin-top: 24px;
+  color: var(--desc-color);
+  font-family: Roboto Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.3px;
+}
+
+.optimism__photo {
+  flex: 1 1 33%;
+  border: 2px solid var(--dark-green);
+  padding: 147px 102px ;
+}
+
+.optimism__box{
+  background: #232A23;
+  width: 232px;
+  height: 32px;
+}

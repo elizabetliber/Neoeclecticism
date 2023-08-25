@@ -1,0 +1,53 @@
+.howItWorks__container{
+  @include containerSmall;
+  margin-top: 132px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.howItWorks__title{
+  color: var(--title-color);
+  font-family: Roboto Mono;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+  letter-spacing: 0.72px;
+}
+
+.howItWorks__description{
+  margin-top: 24px;
+  color: var(--desc-color);
+  font-family: Roboto Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+  letter-spacing: 0.3px;
+}
+
+.howItWorks__link{
+  a:active, /* активная/посещенная ссылка */
+  a:hover,  /* при наведении */
+  a {
+    text-decoration: none;
+    color: var(--title-color);
+    cursor: pointer;
+  }
+}
+
+.howItWorks__link{
+  text-align: center;
+  font-family: Roboto Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 200% */
+  letter-spacing: 0.24px;
+
+  span{
+    color: var(--light-green);
+  }
+}

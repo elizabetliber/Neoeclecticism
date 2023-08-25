@@ -41,7 +41,6 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
-	background-color: transparent;
 	border-radius: 0;
 	cursor: pointer;
 	appearance: none;
@@ -52,9 +51,16 @@
 	transition: all #{$tr}s;
 }
 
-@mixin container($max-width:"120rem", $padding:"2rem") {
+@mixin containerBig($max-width:"1286px") {
 	width: 100%;
 	max-width: #{$max-width};
-	padding: 0 #{$padding};
+	//padding: 0 #{$padding};
+	margin: 0 auto;
+}
+
+@mixin containerSmall($max-width:"672px") {
+	width: 100%;
+	max-width: #{$max-width};
+	//padding: 0 #{$padding};
 	margin: 0 auto;
 }

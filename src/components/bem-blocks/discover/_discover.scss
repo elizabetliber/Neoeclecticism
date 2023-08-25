@@ -1,0 +1,50 @@
+.discover__container {
+  @include containerBig;
+  display: flex;
+  flex-direction: row;
+}
+
+.discover__text_wrapper {
+  display: flex;
+  flex: 1 1 67%;
+  flex-direction: column;
+  border: 2px solid var(--dark-green);
+  padding: 80px;
+}
+
+.discover__title {
+  color: var(--title-color);
+  font-family: Roboto Mono;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+
+.discover__description {
+  margin-top: 12px;
+  color: var(--desc-color);
+  font-family: Roboto Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+  letter-spacing: 0.3px;
+}
+
+.collaboration__photo_wrapper {
+  flex: 1 1 33%;
+  border: 2px solid var(--dark-green);
+}
+
+.discover__name {
+  color: rgba(243, 243, 243, 0.70);
+  text-align: center;
+  font-family: Roboto Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.24px;
+}
