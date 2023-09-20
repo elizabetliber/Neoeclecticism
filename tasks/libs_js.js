@@ -1,4 +1,4 @@
-const plugins = [];
+const plugins = ["node_modules/typed.js/dist/typed.umd.js"];
 const {
 	src,
 	dest
@@ -7,6 +7,7 @@ const uglify = require('gulp-uglify-es').default;
 const concat = require('gulp-concat');
 const map = require('gulp-sourcemaps');
 const chalk = require('chalk');
+
 
 module.exports = function libs_js(done) {
 	if (plugins.length > 0)

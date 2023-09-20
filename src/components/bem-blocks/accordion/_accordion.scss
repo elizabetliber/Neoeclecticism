@@ -1,5 +1,5 @@
 .accordion__wrapper {
-  padding-top: 188px;
+  padding: 188px 0;
 }
 .accordion__container {
   @include containerSmall;
@@ -23,7 +23,6 @@
   padding-bottom: 32px;
   border-bottom: 1px dotted rgba(243, 243, 243, 0.50);
 }
-
 .accordion-item-header {
   color: #F3F3F3;
   font-family: Roboto Mono;

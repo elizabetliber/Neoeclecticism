@@ -1,4 +1,4 @@
-.howItWorks__container{
+.howItWorks__container {
   @include containerSmall;
   margin-top: 132px;
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.howItWorks__title{
+.howItWorks__title {
   color: var(--title-color);
   font-family: Roboto Mono;
   font-size: 36px;
@@ -17,7 +17,7 @@
   letter-spacing: 0.72px;
 }
 
-.howItWorks__description{
+.howItWorks__description {
   margin-top: 24px;
   color: var(--desc-color);
   font-family: Roboto Mono;
@@ -28,18 +28,80 @@
   letter-spacing: 0.3px;
 }
 
-.howItWorks__link{
+.howItWorks__link {
+  display: flex;
+  flex-direction: row;
+
   a:active, /* активная/посещенная ссылка */
-  a:hover,  /* при наведении */
+  a:hover, /* при наведении */
   a {
     text-decoration: none;
     color: var(--title-color);
     cursor: pointer;
   }
+
+  .arrow-hover {
+    color: var(--light-green);
+    display: inline-block;
+    width: 30px;
+  }
 }
 
-.howItWorks__link{
+.howItWorks__link:hover {
+  .arrow-hover {
+    animation: arrow-hover 1s linear infinite;
+  }
+
+  @keyframes arrow-hover {
+    0% {
+      left: 0;
+    }
+    50% {
+      transform: rotate(0deg) translate(-5px, 0);
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+}
+
+.howItWorks__photo {
+  margin: 130px 0 108px 0;
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.howItWorks__circle {
+  position: relative;
+  width: 325px;
+  height: 269px;
+  border-radius: 325px;
+  background: var(--light-green);
+  filter: blur(100px);
+  z-index: 1;
+}
+
+.howItWorks__circle:first-child {
+  margin-right: 230px;
+}
+
+.howItWorks__img {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
   text-align: center;
+  top: -78px;
+}
+
+.howItWorks__link {
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
   font-family: Roboto Mono;
   font-size: 16px;
   font-style: normal;
@@ -47,7 +109,7 @@
   line-height: 32px; /* 200% */
   letter-spacing: 0.24px;
 
-  span{
+  span {
     color: var(--light-green);
   }
 }

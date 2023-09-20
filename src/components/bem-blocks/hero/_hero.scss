@@ -1,4 +1,4 @@
-.hero__container{
+.hero__container {
   @include containerSmall;
   margin-top: 132px;
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.hero__title{
+.hero__title {
   color: var(--title-color);
   font-family: Roboto Mono;
   font-size: 48px;
@@ -15,9 +15,14 @@
   font-weight: 700;
   line-height: 56px; /* 116.667% */
   letter-spacing: 0.72px;
-}
 
-.hero__description{
+  span {
+    display: inline-block;
+    height: 50px;
+  }
+}
+//<span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
+.hero__description {
   margin-top: 32px;
   color: var(--desc-color);
   font-family: Roboto Mono;
@@ -28,6 +33,6 @@
   letter-spacing: 0.3px;
 }
 
-.hero__description p:last-child{
+.hero__description p:last-child {
   margin-top: 35px;
 }

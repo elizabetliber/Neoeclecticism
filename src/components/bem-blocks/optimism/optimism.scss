@@ -11,7 +11,10 @@
   border: 2px solid var(--dark-green);
   padding: 80px;
 }
-
+.optimism__text_wrapper{
+  border-top: none;
+  border-left: none
+}
 .optimism__title {
   color: var(--title-color);
   font-family: Roboto Mono;
@@ -38,9 +41,6 @@
   border: 2px solid var(--dark-green);
   padding: 147px 102px ;
 }
-
-.optimism__box{
-  background: #232A23;
-  width: 232px;
-  height: 32px;
+.optimism__photo{
+  border-top: none;
 }

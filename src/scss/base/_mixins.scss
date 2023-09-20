@@ -17,6 +17,7 @@
 }
 
 @mixin btn_anim($scaleMax:1.05, $scaleMin:0.95) {
+	cursor: pointer;
 	transform-origin: center center;
 	transition: all ease-out 240ms;
 
@@ -54,13 +55,13 @@
 @mixin containerBig($max-width:"1286px") {
 	width: 100%;
 	max-width: #{$max-width};
-	//padding: 0 #{$padding};
+	//padding: 0 0px;
 	margin: 0 auto;
 }
 
 @mixin containerSmall($max-width:"672px") {
 	width: 100%;
 	max-width: #{$max-width};
-	//padding: 0 #{$padding};
+	//padding: 0 0px;
 	margin: 0 auto;
 }

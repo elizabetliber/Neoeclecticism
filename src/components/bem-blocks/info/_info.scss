@@ -11,22 +11,36 @@
   flex-direction: column;
   align-items: center;
   flex: 1 1 33%;
-  background: hotpink;
   border: 2px solid var(--dark-green);
   padding: 42px;
 }
 
+.info__images__wrapper {
+  border-right: none;
+  border-bottom: none;
+}
+.info__image_one, .info__image_two {
+  p {
+    color: rgba(243, 243, 243, 0.70);
+    font-family: Roboto Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 200% */
+    letter-spacing: 0.24px;
+    margin-top: 24px;
+  }
+}
+
 .info__image_one {
-  width: 347px;
-  height: 695px;
-  background: #19CD99;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed rgba(207, 207, 215, 0.50);
 }
+
 .info__image_two {
-  width: 347px;
-  height: 424px;
-  background: #7a671a;
-  margin-top: 40px;
+  margin-top: 24px;
 }
+
 .info__title {
   color: var(--title-color);
   font-family: Roboto Mono;
@@ -57,13 +71,23 @@
   font-family: 'PT Mono', monospace;
   padding: 80px 92px 113px 92px
 }
-
+.tab-group{
+  border-bottom: none;
+}
 
 .tab-content {
-  padding: 1.333em 1.666em 2em 1em;
+  padding-top: 32px;
   display: none;
   border-radius: 0 var(--border-radius) var(--border-radius) var(--border-radius);
-  background-color: var(--manilla);
+  p{
+    color: rgba(243, 243, 243, 0.70);
+    font-family: Roboto Mono;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+    letter-spacing: 0.3px;
+  }
 }
 
 .tab-content.active {
@@ -71,32 +95,33 @@
 }
 
 .tab-container {
-  height: 3em;
+  height: 42px;
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
 
   button {
+    color: #FFF;
+    font-family: Roboto Mono;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: 0.36px;
     border: none;
     box-shadow: none;
     cursor: pointer;
-    padding: 1em;
     outline: none;
-    transform: translateY(3px);
-    transition: transform 200ms ease;
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
-    margin-right: 0.333em;
-    font-family: inherit;
-
-    &:hover {
-      transform: translateY(0);
-    }
   }
 }
-
+.tab:first-child{
+  margin-right: 32px;
+}
 .tab {
-  background-color: yellow;
+  cursor: pointer;
+  background: none;
+  padding: 0 0 12px 0;
 
   &.active {
-    background-color: var(--manilla);
+    border-bottom: 2px solid white;
   }
 }
